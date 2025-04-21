@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Og - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      background: #f9f9f9;
+      font-family: 'Inter', sans-serif;
+      color: #333;
+    }
+
+    .resume {
+      max-width: 1000px;
+      margin: 60px auto;
+      background: #fff;
+      display: flex;
+      padding: 60px;
+      position: relative;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+
+    /* Background gradient spots */
+    .resume::before, .resume::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      z-index: 0;
+      filter: blur(80px);
+      opacity: 0.4;
+    }
+
+    .resume::before {
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, #ffb6a4, #fff);
+      top: -100px;
+      right: 50px;
+    }
+
+    .resume::after {
+      width: 250px;
+      height: 250px;
+      background: radial-gradient(circle, #9db5ff, #fff);
+      bottom: -60px;
+      left: 30px;
+    }
+
+    .left, .right {
+      width: 50%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .left {
+      padding-right: 40px;
+      border-right: 1px dotted #ccc;
+    }
+
+    .right {
+      padding-left: 40px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #888;
+      margin-bottom: 15px;
+    }
+
+    .section p, .section li {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      float: right;
+      margin-top: -20px;
+      margin-bottom: 20px;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .skill-bars {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skill-bars li {
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .skill-bars span {
+      display: block;
+      height: 5px;
+      background: #e38656;
+      border-radius: 5px;
+      margin-top: 4px;
+    }
+
+    .contact li {
+      margin-bottom: 10px;
+    }
+
+    .dot-line {
+      border-top: 1px dotted #ccc;
+      margin: 30px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <div class="left">
+      <h1>Rose<br>Savio</h1>
+      <div class="section about">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate poet and economist, curious with a flair for numbers and codes, finding joy in combining them together.
+        </p>
+      </div>
+
+      <div class="section education">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <strong>BSC Computer Science, Statistics & Economics</strong><br>
+            Kristu Jayanti College, Bangalore<br>
+            2024 – 2027
+          </li>
+          <li>
+            <strong>BBA Digital Business & Entreprenuership</strong><br>
+            IIMB, Bangalore<br>
+            2024 – 2027
+          </li>
+          <li>
+            <strong>High School</strong><br>
+            Sacred Heart CMI Public School, Thevera<br>
+            2022 – 2024
+          </li>
+        </ul>
+      </div>
+
+      <div class="section skills">
+        <h2>Skills</h2>
+        <ul class="skill-bars">
+          <li>Creative Writer <span style="width:90%"></span></li>
+          <li>Data Analyst <span style="width:85%"></span></li>
+          <li>C, Python, MySQL <span style="width:80%"></span></li>
+          <li>HTML, CSS, JavaScript <span style="width:75%"></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right">
+      <img class="profile-pic" src="C:\Users\savio\Downloads\forurl.jpg" alt="Rose Savio">
+      <div class="section contact">
+        <h2>Contact</h2>
+         <ul>
+            <li>Email: Saviorose701@gmail.com</li>
+            <li>Phone: +91 9037509213</li>
+            <li>Location: Bengaluru, India</li>
+         </ul>
+      </div>
+
+      <div class="dot-line"></div>
+
+      <div class="section work">
+        <h2>Work Experience</h2>
+        <ul>
+          <li>
+            <strong>Poet</strong><br>
+            Writers Pocket — 2025<br>
+            Co-author of the poetry anthology 'Winters Sun'
+          </li>
+          <li>
+            <strong>Amatuer Blogger</strong><br>
+            KJC Blog — 2024<br>
+            College event blogs constructed with creative flare
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
